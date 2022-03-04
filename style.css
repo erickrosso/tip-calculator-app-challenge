@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------- Lado Esquerdo ----------- */
+
+.bill {
+    display: grid;
+    grid-template-areas: 
+    "bill bill bill"
+    "valor valor valor"
+    "tip tip tip"
+    "b5 b10 b15"
+    "b25 b50 custom"
+    "people people people"
+    "div div div";
+}
+
+.billB {
+    grid-area: bill;
+}
+
+.valorB {
+    grid-area: valor;
+}
+
+.titleT {
+    grid-area: tip;
+}
+
+.b5 {
+    grid-area: b5;
+}
+
+.b10 {
+    grid-area: b10;
+}
+
+.b15 {
+    grid-area: b15;
+}
+
+.b25 {
+    grid-area: b25;
+}
+
+.b50 {
+    grid-area: b50;
+}
+
+.custom {
+    grid-area: custom;
+}
+
+.titleP {
+    grid-area: people;
+}
+
+.pessoas {
+    grid-area: div;
+}
+
+/* -------------- Lado Direito ---------------- */
+
+.total {
+    display: grid;
+    grid-template-areas: 
+    "titleU totalPersonU"
+    "personU totalPersonU"
+    "titleD totalPersonD"
+    "personD totalPersonD"
+    "reset reset";
+}
+
+.titleU {
+    grid-area: titleU;
+}
+
+.titleD {
+    grid-area: titleD;
+}
+
+.totalPersonU {
+    grid-area: totalPersonU;
+}
+
+.totalPersonD {
+    grid-area: totalPersonD;
+}
+
+.reset {
+    grid-area: reset;
+}
